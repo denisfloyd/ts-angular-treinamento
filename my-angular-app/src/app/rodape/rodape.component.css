@@ -1,0 +1,13 @@
+/*footer*/
+.site-footer {
+    background: #eee;
+    color: #fff;
+    padding: 3px 0;
+    z-index: -9;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}

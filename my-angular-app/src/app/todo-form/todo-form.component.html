@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()">
+  <fieldset class="form-group">
+    <label for="novaTarefa" style="color:orangered">Nova Tarefa</label>
+
+    <input 
+      type="text"
+      [(ngModel)] = "novaTarefa"
+      class="form-control"
+      id="novaTarefa"
+      name="novaTarefa"
+      placeholder="Insira uma nova Tarefa.." />
+
+  </fieldset>
+
+  <h4 style="color: red">{{valida}}</h4>
+
+  <button type="submit" class="btn btn-primary">Add Tarefa</button>
+  
+</form>

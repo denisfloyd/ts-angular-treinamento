@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<main class="container mt-3">
+    <app-todo-form
+        (onNovaTarefa) = "addNovaTarefa($event)"></app-todo-form>
+
+    <div class="mt-2">
+        <app-todo-list
+            [todos]="todosGERAL"
+            (onRemoveTodo) = "removerTarefa($event)">
+        </app-todo-list>
+    </div>
+        
+</main>
+
+
+<app-rodape></app-rodape>
