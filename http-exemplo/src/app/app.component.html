@@ -1,0 +1,25 @@
+<form class="form-inline" (ngSubmit)="pesquisarTermoOb(search.value)">
+  <div class="form-group">
+    <input type="search" class="form-control" placeholder="Entre com um termo" #search />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="pesquisarTermoOb(search.value)">Pesquisar</button>
+</form>
+
+<hr />
+
+<div class="text-center">
+  <p class="lead" *ngIf="loading">Loading...</p>
+</div>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let musica of results">
+
+    <img src="{{musica.thumbnail}}" />
+
+    <a target="_blank" href="{{musica.link}}">
+
+      {{musica.musica}}
+
+    </a>
+  </li>
+</ul>
